@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Role Selection - NutritionConnect AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "primary": "#00685f",
+                        "tertiary": "#825100",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-fixed-dim": "#c0c7d0",
+                        "inverse-on-surface": "#eaf1ff",
+                        "tertiary-container": "#a36700",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "on-secondary-fixed-variant": "#40484f",
+                        "primary-fixed-dim": "#6bd8cb",
+                        "inverse-primary": "#6bd8cb",
+                        "on-tertiary-fixed": "#2a1700",
+                        "on-tertiary-container": "#fffbff",
+                        "tertiary-fixed": "#ffddb8",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#213145",
+                        "primary-container": "#008378",
+                        "background": "#f8f9ff",
+                        "surface-container-low": "#eff4ff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#dce3ec",
+                        "surface-variant": "#d3e4fe",
+                        "on-secondary-container": "#5e656d",
+                        "on-surface": "#0b1c30",
+                        "surface-container": "#e5eeff",
+                        "on-surface-variant": "#3d4947",
+                        "on-secondary-fixed": "#151c23",
+                        "surface-container-high": "#dce9ff",
+                        "surface-tint": "#006a61",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#d3e4fe",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed-variant": "#005049",
+                        "on-background": "#0b1c30",
+                        "outline": "#6d7a77",
+                        "secondary-container": "#dce3ec",
+                        "surface-dim": "#cbdbf5",
+                        "on-primary-fixed": "#00201d",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bcc9c6",
+                        "primary-fixed": "#89f5e7",
+                        "secondary": "#585f67",
+                        "on-primary-container": "#f4fffc",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "margin-desktop": "40px",
+                        "2xl": "48px",
+                        "md": "16px",
+                        "container-max": "1280px",
+                        "base": "4px",
+                        "xl": "32px",
+                        "gutter": "24px",
+                        "xs": "8px",
+                        "margin-mobile": "16px",
+                        "lg": "24px",
+                        "3xl": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Geist"],
+                        "headline-lg-mobile": ["Geist"],
+                        "label-sm": ["Geist"],
+                        "headline-md": ["Geist"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "14px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .role-card {
+            transition: all 0.3s ease;
+        }
+        .role-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(0, 104, 95, 0.15);
+            border-color: #00685f;
+        }
+        .role-card:hover .material-symbols-outlined {
+            color: #00685f;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased selection:bg-primary/20 selection:text-primary">
+<!-- Top App Bar (Simplified for transactional/onboarding screen) -->
+<header class="bg-surface/80 backdrop-blur-md flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-sm z-50 sticky top-0 shadow-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">NutritionConnect AI</span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex items-center justify-center py-2xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max w-full mx-auto">
+<div class="text-center mb-xl md:mb-3xl max-w-2xl mx-auto">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-sm">How will you use NutritionConnect?</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Select your role to personalize your experience and access relevant nutritional tools and insights.</p>
+</div>
+<!-- Bento Grid Layout for Roles -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md md:gap-gutter max-w-6xl mx-auto">
+<!-- Card 1: Pregnant Mother -->
+<button class="role-card bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col text-left group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+<div class="bg-surface-container-low w-12 h-12 rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-colors" data-icon="pregnant_woman">pregnant_woman</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Pregnant Mother</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Get pregnancy-stage nutrition guidance.</p>
+</button>
+<!-- Card 2: Child / Parent -->
+<button class="role-card bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col text-left group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+<div class="bg-surface-container-low w-12 h-12 rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-colors" data-icon="family_restroom">family_restroom</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Child / Parent</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Understand growth and nutrition needs.</p>
+</button>
+<!-- Card 3: ICDS Worker -->
+<button class="role-card bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col text-left group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background lg:col-span-1 md:col-span-2">
+<div class="bg-surface-container-low w-12 h-12 rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-colors" data-icon="supervisor_account">supervisor_account</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">ICDS Worker</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Assess and monitor children under your care.</p>
+</button>
+<!-- Card 4: ASHA / Health Worker -->
+<button class="role-card bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col text-left group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background lg:col-span-2">
+<div class="bg-surface-container-low w-12 h-12 rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-colors" data-icon="medical_services">medical_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">ASHA / Health Worker</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Support community nutrition monitoring and follow-up.</p>
+</button>
+<!-- Card 5: General User -->
+<button class="role-card bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col text-left group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+<div class="bg-surface-container-low w-12 h-12 rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-colors" data-icon="explore">explore</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">General User</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Explore general nutrition guidance.</p>
+</button>
+<!-- Card 6: Administrator -->
+<button class="role-card bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col text-left group relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background md:col-span-2 lg:col-span-3 lg:w-2/3 lg:mx-auto">
+<div class="bg-surface-container-low w-12 h-12 rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-container/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-colors" data-icon="admin_panel_settings">admin_panel_settings</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Administrator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">View authorized aggregated nutrition insights.</p>
+</button>
+</div>
+</div>
+</main>
+</body></html>
