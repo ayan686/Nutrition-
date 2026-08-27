@@ -1,0 +1,237 @@
+<!-- SideNavBar -->
+<nav aria-label="Sidebar Navigation" class="bg-surface shadow-sm h-screen w-64 fixed left-0 top-0 flex flex-col py-lg px-md z-40 hidden md:flex">
+<div class="mb-xl flex items-center gap-sm px-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">NutritionConnect AI</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Admin Portal</p>
+</div>
+</div>
+<div class="flex-1 space-y-xs overflow-y-auto">
+<!-- Active: Dashboard -->
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-primary font-bold border-r-4 border-primary bg-primary-container/10 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-md text-label-md">Assessments</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-md text-label-md">Beneficiaries</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-md text-label-md">Nutrition Guide</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="font-label-md text-label-md">Reports</span>
+</a>
+</div>
+<div class="mt-auto pt-lg border-t border-outline-variant/30 px-sm">
+<div class="flex items-center gap-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="A professional headshot of a health worker in a clinical setting, soft lighting, modern corporate style, conveying trust and competence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWodbo-MdlMxDCHXAP9niZgGdjjAXnBWBfkAFSqBowGJ9g3dsWfjwHsGsrsfdWJYEozb_5prJFOHzFfcBp56EAMttI_EKYuDOVSdD67N9TUMxPbNZktXJ2_PeiNGbRgpTW9zDgOSYDhThdTLTyKh1d7jPbBNCwAPeWbWqf4fKnAOIbq8-7rr4AhijFc7XWIiJbKetFfPIoHyQFJEzwmfsqndH6U92KD6-sblm_RAsSfr0M8VUVJUAEkQ"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Dr. A. Sharma</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lead Officer</p>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-64 flex flex-col h-screen overflow-hidden bg-background">
+<!-- TopNavBar (Mobile only for Dashboard intent, or simplified header for desktop) -->
+<header class="bg-surface/80 backdrop-blur-md shadow-sm sticky top-0 z-30 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-sm">
+<div class="md:hidden flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">NutritionConnect</h1>
+</div>
+<div class="hidden md:flex items-center">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Dashboard Overview</h2>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 rounded-full border border-outline-variant bg-surface focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-body-sm transition-all w-64" placeholder="Search ID or Name..." type="text"/>
+</div>
+<button class="w-10 h-10 rounded-full hover:bg-surface-variant/50 flex items-center justify-center text-on-surface-variant transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span>
+</button>
+</div>
+</header>
+<!-- Scrollable Canvas -->
+<div class="flex-1 overflow-y-auto p-margin-mobile md:p-margin-desktop space-y-lg">
+<!-- Page Header Actions -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-md">
+<div>
+<p class="font-body-md text-body-md text-on-surface-variant">Welcome back. Here is the latest health overview for your district.</p>
+</div>
+<button class="bg-gradient-to-b from-primary to-primary-container text-on-primary px-lg py-sm rounded-lg font-label-md text-label-md flex items-center gap-sm shadow-sm hover:shadow-md transition-all active:scale-95">
+<span class="material-symbols-outlined">add_circle</span>
+                    Record New Assessment
+                </button>
+</div>
+<!-- Overview Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Card 1 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">monitoring</span>
+</div>
+<span class="text-primary font-label-sm text-label-sm flex items-center bg-primary-container/10 px-2 py-1 rounded-full">+4%</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Total Monitored</p>
+<h3 class="font-display-lg text-display-lg text-on-surface">1,248</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm border-l-4 border-l-tertiary">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">event_note</span>
+</div>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Follow-ups Due</p>
+<h3 class="font-display-lg text-display-lg text-on-surface">42</h3>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">12 overdue this week</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm border-l-4 border-l-error">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">At-Risk Cases (SAM/MAM)</p>
+<h3 class="font-display-lg text-display-lg text-on-surface">18</h3>
+<p class="font-body-sm text-body-sm text-error mt-1">Requires immediate review</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">update</span>
+</div>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">Recent Assessments</p>
+<h3 class="font-display-lg text-display-lg text-on-surface">156</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Completed last 30 days</p>
+</div>
+</div>
+</div>
+<!-- Beneficiary List Section -->
+<div class="glass-card rounded-xl flex flex-col h-full min-h-[400px]">
+<div class="p-lg border-b border-outline-variant/50 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Beneficiary Roster</h3>
+<div class="flex gap-sm w-full sm:w-auto">
+<button class="px-md py-xs rounded-full border border-outline text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-variant transition-colors flex items-center gap-xs">
+<span class="material-symbols-outlined text-sm">filter_list</span> Filter
+                        </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/50 bg-surface-bright/50">
+<th class="py-sm px-lg font-label-sm text-label-sm text-on-surface-variant font-semibold">Child ID / Name</th>
+<th class="py-sm px-lg font-label-sm text-label-sm text-on-surface-variant font-semibold">Age</th>
+<th class="py-sm px-lg font-label-sm text-label-sm text-on-surface-variant font-semibold">Last Assessment</th>
+<th class="py-sm px-lg font-label-sm text-label-sm text-on-surface-variant font-semibold">Status</th>
+<th class="py-sm px-lg font-label-sm text-label-sm text-on-surface-variant font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="border-b border-outline-variant/30 hover:bg-surface-variant/20 transition-colors">
+<td class="py-md px-lg">
+<div class="font-semibold text-on-surface">ICDS-9021</div>
+<div class="text-on-surface-variant">Aarav Kumar</div>
+</td>
+<td class="py-md px-lg">2 yrs 4 mos</td>
+<td class="py-md px-lg">12 Oct 2023</td>
+<td class="py-md px-lg">
+<span class="inline-flex items-center gap-xs px-2 py-1 rounded-full status-stable font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Stable
+                                    </span>
+</td>
+<td class="py-md px-lg text-right">
+<button class="text-primary hover:text-primary-container p-2 rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="border-b border-outline-variant/30 hover:bg-surface-variant/20 transition-colors">
+<td class="py-md px-lg">
+<div class="font-semibold text-on-surface">ICDS-8834</div>
+<div class="text-on-surface-variant">Riya Singh</div>
+</td>
+<td class="py-md px-lg">1 yr 2 mos</td>
+<td class="py-md px-lg">05 Nov 2023</td>
+<td class="py-md px-lg">
+<span class="inline-flex items-center gap-xs px-2 py-1 rounded-full status-attention font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Needs Attention
+                                    </span>
+</td>
+<td class="py-md px-lg text-right">
+<button class="text-primary hover:text-primary-container p-2 rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="border-b border-outline-variant/30 hover:bg-surface-variant/20 transition-colors">
+<td class="py-md px-lg">
+<div class="font-semibold text-on-surface">ICDS-7492</div>
+<div class="text-on-surface-variant">Vikram Patel</div>
+</td>
+<td class="py-md px-lg">3 yrs 1 mo</td>
+<td class="py-md px-lg">28 Sep 2023</td>
+<td class="py-md px-lg">
+<span class="inline-flex items-center gap-xs px-2 py-1 rounded-full status-danger font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-error"></span> Follow-up Required
+                                    </span>
+</td>
+<td class="py-md px-lg text-right">
+<button class="text-primary hover:text-primary-container p-2 rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Spacer for bottom nav on mobile -->
+<div class="h-24 md:hidden"></div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav aria-label="Bottom Navigation" class="bg-surface shadow-lg docked full-width bottom-0 fixed rounded-t-xl z-50 flex justify-around items-center px-4 py-2 w-full md:hidden">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-2xl p-2 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-sm text-label-sm mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 rounded-2xl transition-all" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-sm text-label-sm mt-1">Assess</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 rounded-2xl transition-all" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-sm text-label-sm mt-1">Roster</span>
+</a>
+</nav>

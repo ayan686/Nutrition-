@@ -1,0 +1,37 @@
+/**
+ * Admin Analytics Dashboard — extracted inline styles + polish
+ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.trend-up   { color: #00685f; }
+.trend-down { color: #ba1a1a; }
+
+/* KPI + chart cards animate in on load */
+section.grid > .glass-card,
+section.glass-card {
+  animation: fadeInUp 0.5s ease-out both;
+}
+section.grid > .glass-card:nth-child(1) { animation-delay: 0.05s; }
+section.grid > .glass-card:nth-child(2) { animation-delay: 0.1s; }
+section.grid > .glass-card:nth-child(3) { animation-delay: 0.15s; }
+section.grid > .glass-card:nth-child(4) { animation-delay: 0.2s; }
+
+/* Mobile slide-in sidebar, toggled by admin-analytics.js */
+#nc-mobile-sidebar {
+  transition: transform 0.3s ease;
+}
+#nc-mobile-sidebar.-translate-x-full {
+  transform: translateX(-100%);
+}
+#nc-sidebar-backdrop {
+  transition: opacity 0.3s ease;
+}
+
+/* Monthly / Quarterly toggle */
+.nc-range-btn {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

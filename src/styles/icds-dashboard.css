@@ -1,0 +1,41 @@
+/**
+ * ICDS Worker Dashboard — extracted inline styles + polish
+ * Note: theme('colors.outline-variant') was resolved to its static hex value
+ * (#bcc9c6) because Tailwind's Play CDN only processes theme() calls inside
+ * inline <style> tags, not in externally linked stylesheets.
+ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid #bcc9c6;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.status-stable    { color: #008378; background: #e6fcf5; }
+.status-attention { color: #a36700; background: #fff8e1; }
+.status-danger    { color: #ba1a1a; background: #ffdad6; }
+
+/* KPI cards animate in on load */
+.glass-card { animation: fadeInUp 0.5s ease-out both; }
+.grid > .glass-card:nth-child(1) { animation-delay: 0.05s; }
+.grid > .glass-card:nth-child(2) { animation-delay: 0.1s; }
+.grid > .glass-card:nth-child(3) { animation-delay: 0.15s; }
+.grid > .glass-card:nth-child(4) { animation-delay: 0.2s; }
+
+/* Table row highlight when matched by live search */
+tr.nc-row-match {
+  background-color: rgba(0, 104, 95, 0.05);
+}
+tr.nc-row-hidden {
+  display: none;
+}
+
+/* Empty-state message shown when search finds nothing */
+#nc-no-results {
+  display: none;
+  padding: 32px;
+  text-align: center;
+  color: #3d4947;
+}
+#nc-no-results.is-visible {
+  display: block;
+}

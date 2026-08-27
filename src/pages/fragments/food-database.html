@@ -1,0 +1,227 @@
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 bg-surface dark:bg-on-surface shadow-sm py-lg px-md z-40">
+<div class="flex items-center gap-xs mb-xl">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined icon-fill">eco</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">NutritionConnect AI</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Admin Portal</p>
+</div>
+</div>
+<ul class="flex flex-col gap-base font-body-md text-body-md">
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                    Dashboard
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">assignment</span>
+                    Assessments
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+                    Beneficiaries
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-primary font-bold border-r-4 border-primary bg-primary-container/10 hover:bg-secondary-container/50 transition-colors opacity-80 duration-150" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+                    Nutrition Guide
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+                    Reports
+                </a>
+</li>
+</ul>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 md:ml-64 pb-20 md:pb-0 min-h-screen flex flex-col">
+<!-- TopNavBar (Mobile & Desktop Header) -->
+<header class="flex justify-between items-center w-full px-margin-desktop py-sm z-50 bg-surface/80 dark:bg-on-surface/80 backdrop-blur-md shadow-sm docked full-width top-0 sticky">
+<div class="md:hidden flex items-center gap-xs">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined icon-fill">eco</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed-dim">NutritionConnect AI</h1>
+</div>
+<div class="hidden md:flex flex-1 max-w-md mx-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-xl pr-sm py-xs rounded-full border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-secondary-container transition-shadow font-body-sm text-body-sm" placeholder="Search foods, nutrients..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-md font-label-md text-label-md">
+<button class="text-on-surface-variant hover:text-primary transition-opacity p-xs rounded-full hover:bg-surface-variant/30 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-opacity p-xs rounded-full hover:bg-surface-variant/30 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<div class="p-margin-mobile md:p-margin-desktop max-w-container-max mx-auto w-full flex-1 flex flex-col gap-xl">
+<!-- Header Section -->
+<section class="flex flex-col gap-sm">
+<h2 class="font-display-lg text-display-lg text-on-surface">Nutrition Guide &amp; Database</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Explore a comprehensive database of local and regional foods. Understand their nutritional value to craft better diets.</p>
+</section>
+<!-- Mobile Search (Visible only on mobile) -->
+<div class="md:hidden relative w-full mb-md">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-xl pr-sm py-sm rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-secondary-container font-body-md text-body-md" placeholder="Search foods..." type="text"/>
+</div>
+<!-- Categories Bento -->
+<section>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Categories</h3>
+<div class="grid grid-cols-3 md:grid-cols-6 gap-sm md:gap-md">
+<button class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border border-outline-variant hover:border-primary hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-3xl text-secondary group-hover:text-primary transition-colors">grass</span>
+<span class="font-label-sm text-label-sm mt-xs text-on-surface">Cereals</span>
+</button>
+<button class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border border-outline-variant hover:border-primary hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-3xl text-secondary group-hover:text-primary transition-colors">local_florist</span>
+<span class="font-label-sm text-label-sm mt-xs text-on-surface">Pulses</span>
+</button>
+<button class="flex flex-col items-center justify-center p-md bg-primary-container/10 border-primary rounded-xl border shadow-sm group">
+<span class="material-symbols-outlined text-3xl text-primary icon-fill">eco</span>
+<span class="font-label-sm text-label-sm mt-xs text-primary font-bold">Vegetables</span>
+</button>
+<button class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border border-outline-variant hover:border-primary hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-3xl text-secondary group-hover:text-primary transition-colors">file_download</span>
+<span class="font-label-sm text-label-sm mt-xs text-on-surface">Fruits</span>
+</button>
+<button class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border border-outline-variant hover:border-primary hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-3xl text-secondary group-hover:text-primary transition-colors">water_drop</span>
+<span class="font-label-sm text-label-sm mt-xs text-on-surface">Dairy</span>
+</button>
+<button class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border border-outline-variant hover:border-primary hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-3xl text-secondary group-hover:text-primary transition-colors">egg</span>
+<span class="font-label-sm text-label-sm mt-xs text-on-surface">Eggs</span>
+</button>
+</div>
+</section>
+<!-- Suggested & Food Cards Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-xl">
+<!-- Main Database Grid -->
+<section class="lg:col-span-2 flex flex-col gap-md">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Vegetables &amp; Greens</h3>
+<button class="font-label-md text-label-md text-primary hover:underline flex items-center">
+                            Filters <span class="material-symbols-outlined text-sm ml-xs">filter_list</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Food Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant p-md flex flex-col gap-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Spinach (Palak)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Leafy Green</p>
+</div>
+<span class="px-xs py-[2px] rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm border border-outline-variant/30">High Iron</span>
+</div>
+<div class="grid grid-cols-2 gap-xs my-xs">
+<div class="bg-surface p-xs rounded-lg border border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Calories</p>
+<p class="font-body-md text-body-md font-semibold text-on-surface">23 kcal <span class="text-xs font-normal">/100g</span></p>
+</div>
+<div class="bg-surface p-xs rounded-lg border border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Protein</p>
+<p class="font-body-md text-body-md font-semibold text-on-surface">2.9g <span class="text-xs font-normal">/100g</span></p>
+</div>
+</div>
+<div class="flex items-center gap-md font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> High Avail.
+                                </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">payments</span> Low Cost
+                                </div>
+</div>
+</article>
+<!-- Food Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant p-md flex flex-col gap-sm shadow-sm hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Sweet Potato</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Root Vegetable</p>
+</div>
+<span class="px-xs py-[2px] rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm border border-outline-variant/30">Vit A</span>
+</div>
+<div class="grid grid-cols-2 gap-xs my-xs">
+<div class="bg-surface p-xs rounded-lg border border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Calories</p>
+<p class="font-body-md text-body-md font-semibold text-on-surface">86 kcal <span class="text-xs font-normal">/100g</span></p>
+</div>
+<div class="bg-surface p-xs rounded-lg border border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Carbs</p>
+<p class="font-body-md text-body-md font-semibold text-on-surface">20g <span class="text-xs font-normal">/100g</span></p>
+</div>
+</div>
+<div class="flex items-center gap-md font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Med Avail.
+                                </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">payments</span> Med Cost
+                                </div>
+</div>
+</article>
+</div>
+</section>
+<!-- Personalized Suggestions Side Panel -->
+<aside class="lg:col-span-1">
+<div class="bg-surface-container-low rounded-xl border border-outline-variant p-lg shadow-sm h-full">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary icon-fill text-2xl">auto_awesome</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Suggestions</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-lg">Tailored for: <span class="font-medium text-on-surface">Pregnancy Support</span></p>
+<div class="flex flex-col gap-md">
+<!-- Suggestion Item -->
+<div class="bg-surface-container-lowest p-md rounded-lg border border-outline-variant/50 hover:border-primary/50 transition-colors cursor-pointer">
+<h4 class="font-label-md text-label-md text-primary font-bold mb-xs">Iron-Rich Combos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-sm">Pairing Spinach with Citrus fruits increases iron absorption.</p>
+<div class="w-full bg-surface-variant rounded-full h-1.5 mb-xs">
+<div class="bg-primary h-1.5 rounded-full" style="width: 85%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-right text-on-surface-variant">Highly Recommended</p>
+</div>
+<!-- Suggestion Item -->
+<div class="bg-surface-container-lowest p-md rounded-lg border border-outline-variant/50 hover:border-primary/50 transition-colors cursor-pointer">
+<h4 class="font-label-md text-label-md text-primary font-bold mb-xs">Folic Acid Sources</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lentils and dark leafy greens are essential during early trimesters.</p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface dark:bg-on-surface shadow-lg docked full-width rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span>Plan</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-2xl p-2 active:scale-90 duration-200 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined icon-fill">auto_stories</span>
+<span>Guide</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 font-label-sm text-label-sm" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span>Assistant</span>
+</a>
+</nav>

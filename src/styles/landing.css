@@ -1,0 +1,35 @@
+/**
+ * Landing page — extracted inline styles + polish
+ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(0, 104, 95, 0.08) 0%, rgba(248, 249, 255, 1) 60%);
+}
+.soft-shadow {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Floating hero cards use the shared @keyframes float from common.css */
+[style*="animate-[float"] {
+  will-change: transform;
+}
+
+/* Hero entrance */
+.hero-copy > * {
+  animation: fadeInUp 0.6s ease-out both;
+}
+.hero-copy > *:nth-child(2) { animation-delay: 0.08s; }
+.hero-copy > *:nth-child(3) { animation-delay: 0.16s; }
+.hero-copy > *:nth-child(4) { animation-delay: 0.24s; }
+.hero-copy > *:nth-child(5) { animation-delay: 0.32s; }
+
+/* Bottom mobile nav active state swap handled by landing.js */
+.nc-bottomnav-active {
+  background-color: rgb(220 227 236 / var(--tw-bg-opacity, 1));
+}

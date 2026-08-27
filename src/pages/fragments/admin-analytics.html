@@ -1,0 +1,276 @@
+<!-- Desktop SideNavBar -->
+<nav class="hidden md:flex flex-col h-screen w-64 fixed left-0 top-0 bg-surface shadow-sm z-50">
+<div class="flex flex-col h-full py-lg px-md">
+<div class="mb-xl flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">NutritionConnect AI</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Admin Portal</p>
+</div>
+</div>
+<ul class="flex flex-col gap-xs flex-1">
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-primary font-bold border-r-4 border-primary bg-primary-container/10 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-md text-label-md">Assessments</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-md text-label-md">Beneficiaries</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-md text-label-md">Nutrition Guide</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-secondary-container opacity-70 hover:bg-secondary-container/50 transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="font-label-md text-label-md">Reports</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 md:ml-64 p-margin-mobile md:p-margin-desktop min-h-screen">
+<!-- Top App Bar (Mobile Nav & Global Actions) -->
+<header class="flex justify-between items-center w-full mb-xl">
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Page Title -->
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">National Overview</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                    Demo Data Environment
+                </p>
+</div>
+<!-- Global Actions -->
+<div class="flex items-center gap-md">
+<button class="p-2 rounded-full hover:bg-surface-variant transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a female government health administrator in her 40s. She is wearing a modern teal blazer over a white blouse. The lighting is bright and clean, typical of a modern office environment. High resolution, shallow depth of field, corporate portrait style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK5fwsXWVjyyABj3EbOHVoplF8Bu0Xnbcy7BHN6eLh0EQ2oAjyAOlvxtTi1Imb9WmRBfYqar3pS9V60teYFMIhsTnrHUEZkdJmYegPkZghn1fbkPcsQ8qy4cn253VzdWLtSY3Uu8OLYLzkNNj9AXByRxoux3oaycNyKceKObzToDnrV-UunEaTNbqU1P-jimvp9ewSzMOOLActEsA1-eCeAIKFnu9cC1wtsLVV3I2VNshVApvf3cjkXQ"/>
+</div>
+</div>
+</header>
+<!-- KPI Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-xl">
+<!-- KPI 1 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Beneficiaries</p>
+<h3 class="font-display-lg text-display-lg text-on-surface mt-xs">124,592</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">group</span>
+</div>
+</div>
+<div class="flex items-center gap-xs mt-auto">
+<span class="material-symbols-outlined text-[16px] trend-up">trending_up</span>
+<span class="font-label-sm text-label-sm text-primary">+5.2% from last month</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pregnant Monitored</p>
+<h3 class="font-display-lg text-display-lg text-on-surface mt-xs">48,210</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">pregnant_woman</span>
+</div>
+</div>
+<div class="flex items-center gap-xs mt-auto">
+<span class="material-symbols-outlined text-[16px] trend-up">trending_up</span>
+<span class="font-label-sm text-label-sm text-primary">+2.1% from last month</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm border-l-4 border-l-error">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">At-Risk Cases</p>
+<h3 class="font-display-lg text-display-lg text-error mt-xs">3,842</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</div>
+<div class="flex items-center gap-xs mt-auto">
+<span class="material-symbols-outlined text-[16px] trend-down">trending_down</span>
+<span class="font-label-sm text-label-sm text-error">-1.4% from last month</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pending Follow-ups</p>
+<h3 class="font-display-lg text-display-lg text-tertiary mt-xs">1,205</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">pending_actions</span>
+</div>
+</div>
+<div class="flex items-center gap-xs mt-auto">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Requires immediate action</span>
+</div>
+</div>
+</section>
+<!-- Complex Data Section (Bento Grid Style) -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter mb-xl">
+<!-- Geographic Insights (Map) -->
+<div class="glass-card rounded-xl p-lg lg:col-span-2 flex flex-col min-h-[400px]">
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">Geographic Insights</h3>
+<button class="p-2 rounded-lg hover:bg-surface-variant transition-colors text-primary flex items-center gap-xs font-label-md text-label-md">
+                        Filter Regions
+                        <span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+<div class="flex-1 rounded-lg overflow-hidden relative bg-surface-container-low border border-outline-variant">
+<!-- Simulated Map using Image and Absolute Overlays -->
+<img class="w-full h-full object-cover opacity-80" data-alt="A clean, minimalist vector map illustration of India. The map uses a light slate background with soft teal and blue regional highlights to represent data density. Modern corporate aesthetic, clean lines, no text labels, high contrast between landmass and background." data-location="India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmGFugQTIYGaaBlzYODnR-uh_AU2yOSdYqFeTU8vNUfE3LT0m5-mIGXb4xx1aS_5kMUk9iw2elzFnoQGjNg5ZXOh_3aKnJsEeWi7QTB-6BiVD4GSvzbDN9K_HgEW7_O65mbBuDHoJXrC3ymPJv5VZXon-nA2ZupJCiXT6aLwhqFTXc6mer1soqiMAps3tnVgHbGo5ky4gWy7zqpTtwpdb7g7V2qFKgGrn00Iv1ubowgKCVWyAGjkl5_Q"/>
+<!-- Map Data Points (Simulated) -->
+<div class="absolute top-1/4 left-1/3 w-4 h-4 bg-error rounded-full shadow-[0_0_15px_rgba(186,26,26,0.8)] animate-pulse"></div>
+<div class="absolute top-1/2 left-1/2 w-6 h-6 bg-primary rounded-full shadow-[0_0_15px_rgba(0,104,95,0.8)] opacity-70"></div>
+<div class="absolute bottom-1/3 right-1/4 w-3 h-3 bg-tertiary rounded-full shadow-[0_0_10px_rgba(130,81,0,0.8)]"></div>
+</div>
+</div>
+<!-- Nutrition Risk Distribution (Donut Chart Simulated) -->
+<div class="glass-card rounded-xl p-lg flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Risk Distribution</h3>
+<div class="flex-1 flex flex-col justify-center items-center">
+<!-- CSS simulated Donut Chart -->
+<div class="relative w-48 h-48 rounded-full mb-lg" style="background: conic-gradient(#00685f 0% 65%, #ffb95f 65% 85%, #ba1a1a 85% 100%);">
+<div class="absolute inset-4 bg-surface rounded-full flex items-center justify-center shadow-inner">
+<div class="text-center">
+<span class="font-display-lg text-headline-lg block text-on-surface">65%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Adequate</span>
+</div>
+</div>
+</div>
+<!-- Legend -->
+<div class="w-full flex flex-col gap-xs">
+<div class="flex items-center justify-between p-2 rounded hover:bg-surface-variant transition-colors">
+<div class="flex items-center gap-sm">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="font-body-sm text-body-sm text-on-surface">Adequate</span>
+</div>
+<span class="font-label-md text-label-md">65%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded hover:bg-surface-variant transition-colors">
+<div class="flex items-center gap-sm">
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
+<span class="font-body-sm text-body-sm text-on-surface">At-Risk</span>
+</div>
+<span class="font-label-md text-label-md">20%</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded hover:bg-surface-variant transition-colors">
+<div class="flex items-center gap-sm">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<span class="font-body-sm text-body-sm text-on-surface">High-Risk</span>
+</div>
+<span class="font-label-md text-label-md">15%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trends Over Time Section -->
+<section class="glass-card rounded-xl p-lg mb-2xl">
+<div class="flex justify-between items-center mb-lg">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Assessment Trends</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monthly assessment volume vs. Risk reduction</p>
+</div>
+<div class="flex gap-sm">
+<button class="px-4 py-2 rounded-lg bg-surface-variant text-on-surface font-label-md text-label-md">Monthly</button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm">Quarterly</button>
+</div>
+</div>
+<!-- Simulated Area Chart -->
+<div class="w-full h-64 relative border-b border-l border-outline-variant pb-8 pl-8 flex items-end gap-2">
+<!-- Y Axis Labels -->
+<div class="absolute left-0 top-0 h-full flex flex-col justify-between text-label-sm text-on-surface-variant font-label-sm pb-8">
+<span>10k</span>
+<span>7.5k</span>
+<span>5k</span>
+<span>2.5k</span>
+<span>0</span>
+</div>
+<!-- X Axis Labels -->
+<div class="absolute bottom-0 left-8 w-full flex justify-between text-label-sm text-on-surface-variant font-label-sm pt-2 pr-8">
+<span>Jan</span>
+<span>Feb</span>
+<span>Mar</span>
+<span>Apr</span>
+<span>May</span>
+<span>Jun</span>
+</div>
+<!-- Simulated Bars/Area Data -->
+<div class="flex-1 h-full flex items-end justify-between px-4 relative">
+<!-- Background Trend Line (Simulated Area) -->
+<div class="absolute inset-0 opacity-10 bg-gradient-to-t from-primary to-transparent" style="clip-path: polygon(0 100%, 0 40%, 20% 30%, 40% 50%, 60% 20%, 80% 35%, 100% 10%, 100% 100%);"></div>
+<!-- Bar Data -->
+<div class="w-[10%] bg-secondary-fixed rounded-t-sm h-[40%] hover:bg-primary transition-colors cursor-pointer relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">4,000</div>
+</div>
+<div class="w-[10%] bg-secondary-fixed rounded-t-sm h-[70%] hover:bg-primary transition-colors cursor-pointer relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">7,000</div>
+</div>
+<div class="w-[10%] bg-secondary-fixed rounded-t-sm h-[50%] hover:bg-primary transition-colors cursor-pointer relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">5,000</div>
+</div>
+<div class="w-[10%] bg-primary rounded-t-sm h-[80%] cursor-pointer shadow-[0_0_10px_rgba(0,104,95,0.3)] relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">8,000</div>
+</div>
+<div class="w-[10%] bg-secondary-fixed rounded-t-sm h-[65%] hover:bg-primary transition-colors cursor-pointer relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">6,500</div>
+</div>
+<div class="w-[10%] bg-secondary-fixed rounded-t-sm h-[90%] hover:bg-primary transition-colors cursor-pointer relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface text-label-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">9,000</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Mobile Bottom Navigation (Hidden on Desktop) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface shadow-[0_-4px_20px_rgba(0,0,0,0.05)] rounded-t-xl border-t border-outline-variant/20">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-2xl p-2 min-w-[64px]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-sm text-[10px] mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 rounded-2xl min-w-[64px]" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-sm text-[10px] mt-1">Assess</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 rounded-2xl min-w-[64px]" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-sm text-[10px] mt-1">People</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant/30 rounded-2xl min-w-[64px]" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="font-label-sm text-[10px] mt-1">Reports</span>
+</a>
+</nav>
