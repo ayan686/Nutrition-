@@ -2100,7 +2100,7 @@ function PitchDeckModalComponent({ onClose }) {
       eyebrow: 'PROJECT · NUTRIMAA AI',
       title: 'Empowering Every Mother, Nourishing Every Child',
       subtitle: 'An AI-powered nutrition intelligence and maternal-child health platform designed to eradicate preventable malnutrition and assist frontline health systems.',
-      meta: 'TEAM: NEXORA · REFERENCE: XAMPUS INSPIRATION'
+      meta: 'TEAM: ALFA CODERS · MADE BY: AYAN ,DIBAKAR ,NATRAJ '
     },
     {
       eyebrow: 'THE PROBLEM',
